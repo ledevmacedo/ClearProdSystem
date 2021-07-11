@@ -1,0 +1,70 @@
+* {
+    margin: auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+.green{
+    background-color: #0C1C0C;
+    border-radius: 10px;
+}
+.red{
+    background-color: #210C0C;
+    border-radius: 10px;
+}
+.tags{
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 16px;
+    color: var(--secondary)
+}
+.tags.aprove{
+    border-color: #4136F1;
+}
+.fraude{
+    border-color: #E61800;
+    margin: auto;
+}
+.fraude2{
+    border-color: #E67100;
+    margin: auto;
+}
+
+.quadrado{
+    background-color: var(--primary);
+    width: 224px;
+    height: 144px;
+    border-radius: 16px;
+    text-align: center;
+    margin: auto;
+}
+
+.quadrado_inferior{
+    background-color: var(--primary);
+    width: 224px;
+    height: 80px;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+}
+section{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.col-auto{
+    padding: 0px;
+    margin: auto;
+}
+
+.txt_total{
+    margin:auto;
+    margin-bottom: 0;
+    padding:0;
+    font-size: 32px;
+}
+.logo{
+    height: 200px;
+    width: 200px;
+}

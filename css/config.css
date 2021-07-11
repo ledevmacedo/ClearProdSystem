@@ -1,0 +1,10 @@
+:root{
+    --primary:#0D0D0D;
+    --secondary: #FFFFFF;
+}
+body{
+    background-color: #202020;
+}
+header{
+    padding-top: 20px;
+}
