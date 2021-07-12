@@ -8,595 +8,112 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="shortcut icon" href="assets/favicon.png" />
     <!--CSS -->
     <link rel="stylesheet" href="css/main.css">
-    <title>Prod Zen</title>
+    <!--JS-->
+    <title>Clear Prod System</title>
 </head>
-
-<body>
-    <!--//PROD DAS 13 HORAS\\-->
-    <header>
-        <div>
-        </div>
-    </header>
-    <button type="button" class="tags fraude2 btn btn-outline-danger" onclick="reset()">Reset</button>
-    <!--CONTADOR DAS 13 HORAS-->
-    <section id="13h">
-        <div class="quadrado">
-            <div class="flex">
-                <!--HORÁRIO-->
-                <div class="container justify-content-center">
-                    <div class="col-auto">
-                        <h1>13h00</h1>
-                    </div>
-                </div>
-                <!--//HORÁRIO-->
-                <!--BOTÃO-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-                        <!--BOTÃO DE ADICIONAR-->
-                        <div class="col-auto container justify-content-center">
-                            <button onclick="add('prod13h')" class="btn_13h_add green btn btn-outline">
-                                <img src="ASSETS/arrow-green.svg" alt="">
-                            </button>
-                        </div>
-
-                        <!--VALOR-->
-                        <div class="col-auto container justify-content-center">
-                            <h2 id="prod13h"></h2>
-                        </div>
-
-                        <!--BOTÃO DE REMOVER-->
-                        <div class="col-auto container justify-content-center">
-                            <!-- -->
-                            <button onclick="remove('prod13h')" class="btn_13h_remove red btn btn-outline">
-                                <img src="ASSETS/arrow-red.svg" alt="">
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <!--//BOTÃO-->
-
-                <!--TAGS-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-
-                        <div class="col-auto">
-                            <button type="button" onclick="copyText(approve)"
-                                class="tags aprove btn btn-outline-primary">Aprovar</button>
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude btn btn-outline-warning" onclick="copyText(fraud)">Fraude</button>
-
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude2 btn btn-outline-danger" onclick="copyText(fraud2)">Fraude</button>
-                        </div>
-                    </div>
-                </div>
-                <!--//TAGS-->
-
-            </div>
-        </div>
-    </section>
-
-    <!--CONTADOR DAS 14 HORAS-->
-    <section id="14h">
-        <div class="quadrado">
-            <div class="flex">
-                <!--HORÁRIO-->
-                <div class="container justify-content-center">
-                    <div class="col-auto">
-                        <h1>14h00</h1>
-                    </div>
-                </div>
-                <!--//HORÁRIO-->
-                <!--BOTÃO-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-                        <!--BOTÃO DE ADICIONAR-->
-                        <div class="col-auto container justify-content-center">
-                            <button onclick="add('prod14h')" class="btn_14h_add green btn btn-outline">
-                                <img src="ASSETS/arrow-green.svg" alt="">
-                            </button>
-                        </div>
-
-                        <!--VALOR-->
-                        <div class="col-auto container justify-content-center">
-                            <h2 id="prod14h"></h2>
-                        </div>
-
-                        <!--BOTÃO DE REMOVER-->
-                        <div class="col-auto container justify-content-center">
-                            <!-- -->
-                            <button onclick="remove('prod14h')" class="btn_14h_remove red btn btn-outline">
-                                <img src="ASSETS/arrow-red.svg" alt="">
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <!--//BOTÃO-->
-
-                <!--TAGS-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-
-                        <div class="col-auto">
-                            <button type="button" onclick="copyText(approve)"
-                                class="tags aprove btn btn-outline-primary">Aprovar</button>
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude btn btn-outline-warning" onclick="copyText(fraud)">Fraude</button>
-
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude2 btn btn-outline-danger" onclick="copyText(fraud2)">Fraude</button>
-                        </div>
-                    </div>
-                </div>
-                <!--//TAGS-->
-
-            </div>
-        </div>
-    </section>
-
-    <!--CONTADOR DAS 15 HORAS-->
-    <section id="15h">
-        <div class="quadrado">
-            <div class="flex">
-                <!--HORÁRIO-->
-                <div class="container justify-content-center">
-                    <div class="col-auto">
-                        <h1>15h00</h1>
-                    </div>
-                </div>
-                <!--//HORÁRIO-->
-                <!--BOTÃO-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-                        <!--BOTÃO DE ADICIONAR-->
-                        <div class="col-auto container justify-content-center">
-                            <button onclick="add('prod15h')" class="btn_15h_add green btn btn-outline">
-                                <img src="ASSETS/arrow-green.svg" alt="">
-                            </button>
-                        </div>
-
-                        <!--VALOR-->
-                        <div class="col-auto container justify-content-center">
-                            <h2 id="prod15h"></h2>
-                        </div>
-
-                        <!--BOTÃO DE REMOVER-->
-                        <div class="col-auto container justify-content-center">
-                            <!-- -->
-                            <button onclick="remove('prod15h')" class="btn_15h_remove red btn btn-outline">
-                                <img src="ASSETS/arrow-red.svg" alt="">
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <!--//BOTÃO-->
-
-                <!--TAGS-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-
-                        <div class="col-auto">
-                            <button type="button" onclick="copyText(approve)"
-                                class="tags aprove btn btn-outline-primary">Aprovar</button>
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude btn btn-outline-warning" onclick="copyText(fraud)">Fraude</button>
-
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude2 btn btn-outline-danger" onclick="copyText(fraud2)">Fraude</button>
-                        </div>
-                    </div>
-                </div>
-                <!--//TAGS-->
-
-            </div>
-        </div>
-    </section>
-
-    <!--CONTADOR DAS 16 HORAS-->
-    <section id="16h">
-        <div class="quadrado">
-            <div class="flex">
-                <!--HORÁRIO-->
-                <div class="container justify-content-center">
-                    <div class="col-auto">
-                        <h1>16h00</h1>
-                    </div>
-                </div>
-                <!--//HORÁRIO-->
-                <!--BOTÃO-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-                        <!--BOTÃO DE ADICIONAR-->
-                        <div class="col-auto container justify-content-center">
-                            <button onclick="add('prod16h')" class="green btn btn-outline">
-                                <img src="ASSETS/arrow-green.svg" alt="">
-                            </button>
-                        </div>
-
-                        <!--VALOR-->
-                        <div class="col-auto container justify-content-center">
-                            <h2 id="prod16h"></h2>
-                        </div>
-
-                        <!--BOTÃO DE REMOVER-->
-                        <div class="col-auto container justify-content-center">
-                            <!-- -->
-                            <button onclick="remove('prod16h')" class="red btn btn-outline">
-                                <img src="ASSETS/arrow-red.svg" alt="">
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <!--//BOTÃO-->
-
-                <!--TAGS-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-
-                        <div class="col-auto">
-                            <button type="button" onclick="copyText(approve)"
-                                class="tags aprove btn btn-outline-primary">Aprovar</button>
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude btn btn-outline-warning" onclick="copyText(fraud)">Fraude</button>
-
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude2 btn btn-outline-danger" onclick="copyText(fraud2)">Fraude</button>
-                        </div>
-                    </div>
-                </div>
-                <!--//TAGS-->
-
-            </div>
-        </div>
-    </section>
-
-    <!--CONTADOR DAS 17 HORAS-->
-    <section id="17h">
-        <div class="quadrado">
-            <div class="flex">
-                <!--HORÁRIO-->
-                <div class="container justify-content-center">
-                    <div class="col-auto">
-                        <h1>17h00</h1>
-                    </div>
-                </div>
-                <!--//HORÁRIO-->
-                <!--BOTÃO-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-                        <!--BOTÃO DE ADICIONAR-->
-                        <div class="col-auto container justify-content-center">
-                            <button onclick="add('prod17h')" class="green btn btn-outline">
-                                <img src="ASSETS/arrow-green.svg" alt="">
-                            </button>
-                        </div>
-
-                        <!--VALOR-->
-                        <div class="col-auto container justify-content-center">
-                            <h2 id="prod17h"></h2>
-                        </div>
-
-                        <!--BOTÃO DE REMOVER-->
-                        <div class="col-auto container justify-content-center">
-                            <!-- -->
-                            <button onclick="remove('prod17h')" class="red btn btn-outline">
-                                <img src="ASSETS/arrow-red.svg" alt="">
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <!--//BOTÃO-->
-
-                <!--TAGS-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-
-                        <div class="col-auto">
-                            <button type="button" onclick="copyText(approve)"
-                                class="tags aprove btn btn-outline-primary">Aprovar</button>
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude btn btn-outline-warning" onclick="copyText(fraud)">Fraude</button>
-
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude2 btn btn-outline-danger" onclick="copyText(fraud2)">Fraude</button>
-                        </div>
-                    </div>
-                </div>
-                <!--//TAGS-->
-
-            </div>
-        </div>
-    </section>
-    <!--CONTADOR DAS 18 HORAS-->
-    <section id="18h">
-        <div class="quadrado">
-            <div class="flex">
-                <!--HORÁRIO-->
-                <div class="container justify-content-center">
-                    <div class="col-auto">
-                        <h1>18h00</h1>
-                    </div>
-                </div>
-                <!--//HORÁRIO-->
-                <!--BOTÃO-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-                        <!--BOTÃO DE ADICIONAR-->
-                        <div class="col-auto container justify-content-center">
-                            <button onclick="add('prod18h')" class="green btn btn-outline">
-                                <img src="ASSETS/arrow-green.svg" alt="">
-                            </button>
-                        </div>
-
-                        <!--VALOR-->
-                        <div class="col-auto container justify-content-center">
-                            <h2 id="prod18h"></h2>
-                        </div>
-
-                        <!--BOTÃO DE REMOVER-->
-                        <div class="col-auto container justify-content-center">
-                            <!-- -->
-                            <button onclick="remove('prod18h')" class="red btn btn-outline">
-                                <img src="ASSETS/arrow-red.svg" alt="">
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <!--//BOTÃO-->
-
-                <!--TAGS-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-
-                        <div class="col-auto">
-                            <button type="button" onclick="copyText(approve)"
-                                class="tags aprove btn btn-outline-primary">Aprovar</button>
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude btn btn-outline-warning" onclick="copyText(fraud)">Fraude</button>
-
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude2 btn btn-outline-danger" onclick="copyText(fraud2)">Fraude</button>
-                        </div>
-                    </div>
-                </div>
-                <!--//TAGS-->
-
-            </div>
-        </div>
-    </section>
-
-    <!--CONTADOR DAS 19 HORAS-->
-    <section id="19h">
-        <div class="quadrado">
-            <div class="flex">
-                <!--HORÁRIO-->
-                <div class="container justify-content-center">
-                    <div class="col-auto">
-                        <h1>19h00</h1>
-                    </div>
-                </div>
-                <!--//HORÁRIO-->
-                <!--BOTÃO-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-                        <!--BOTÃO DE ADICIONAR-->
-                        <div class="col-auto container justify-content-center">
-                            <button onclick="add('prod19h')" class="green btn btn-outline">
-                                <img src="ASSETS/arrow-green.svg" alt="">
-                            </button>
-                        </div>
-
-                        <!--VALOR-->
-                        <div class="col-auto container justify-content-center">
-                            <h2 id="prod19h"></h2>
-                        </div>
-
-                        <!--BOTÃO DE REMOVER-->
-                        <div class="col-auto container justify-content-center">
-                            <!-- -->
-                            <button onclick="remove('prod19h')" class="red btn btn-outline">
-                                <img src="ASSETS/arrow-red.svg" alt="">
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <!--//BOTÃO-->
-
-                <!--TAGS-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-
-                        <div class="col-auto">
-                            <button type="button" onclick="copyText(approve)"
-                                class="tags aprove btn btn-outline-primary">Aprovar</button>
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude btn btn-outline-warning" onclick="copyText(fraud)">Fraude</button>
-
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude2 btn btn-outline-danger" onclick="copyText(fraud2)">Fraude</button>
-                        </div>
-                    </div>
-                </div>
-                <!--//TAGS-->
-
-            </div>
-        </div>
-    </section>
-
-    <!--CONTADOR DAS 20 HORAS-->
-    <section id="20h">
-        <div class="quadrado">
-            <div class="flex">
-                <!--HORÁRIO-->
-                <div class="container justify-content-center">
-                    <div class="col-auto">
-                        <h1>20h00</h1>
-                    </div>
-                </div>
-                <!--//HORÁRIO-->
-                <!--BOTÃO-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-                        <!--BOTÃO DE ADICIONAR-->
-                        <div class="col-auto container justify-content-center">
-                            <button onclick="add('prod20h')" class="green btn btn-outline">
-                                <img src="ASSETS/arrow-green.svg" alt="">
-                            </button>
-                        </div>
-
-                        <!--VALOR-->
-                        <div class="col-auto container justify-content-center">
-                            <h2 id="prod20h"></h2>
-                        </div>
-
-                        <!--BOTÃO DE REMOVER-->
-                        <div class="col-auto container justify-content-center">
-                            <!-- -->
-                            <button onclick="remove('prod20h')" class="red btn btn-outline">
-                                <img src="ASSETS/arrow-red.svg" alt="">
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <!--//BOTÃO-->
-
-                <!--TAGS-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-
-                        <div class="col-auto">
-                            <button type="button" onclick="copyText(approve)"
-                                class="tags aprove btn btn-outline-primary">Aprovar</button>
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude btn btn-outline-warning" onclick="copyText(fraud)">Fraude</button>
-
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude2 btn btn-outline-danger" onclick="copyText(fraud2)">Fraude</button>
-                        </div>
-                    </div>
-                </div>
-                <!--//TAGS-->
-
-            </div>
-        </div>
-    </section>
-
-    <!--CONTADOR DAS 20 HORAS-->
-    <section id="21h">
-        <div class="quadrado">
-            <div class="flex">
-                <!--HORÁRIO-->
-                <div class="container justify-content-center">
-                    <div class="col-auto">
-                        <h1>21h00</h1>
-                    </div>
-                </div>
-                <!--//HORÁRIO-->
-                <!--BOTÃO-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-                        <!--BOTÃO DE ADICIONAR-->
-                        <div class="col-auto container justify-content-center">
-                            <button onclick="add('prod21h')" class="green btn btn-outline">
-                                <img src="ASSETS/arrow-green.svg" alt="">
-                            </button>
-                        </div>
-
-                        <!--VALOR-->
-                        <div class="col-auto container justify-content-center">
-                            <h2 id="prod21h"></h2>
-                        </div>
-
-                        <!--BOTÃO DE REMOVER-->
-                        <div class="col-auto container justify-content-center">
-                            <!-- -->
-                            <button onclick="remove('prod21h')" class="red btn btn-outline">
-                                <img src="ASSETS/arrow-red.svg" alt="">
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <!--//BOTÃO-->
-
-                <!--TAGS-->
-                <div class="container justify-content-center">
-                    <div class="row justify-content-md-center">
-
-                        <div class="col-auto">
-                            <button type="button" onclick="copyText(approve)"
-                                class="tags aprove btn btn-outline-primary">Aprovar</button>
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude btn btn-outline-warning" onclick="copyText(fraud)">Fraude</button>
-
-                        </div>
-
-                        <div class="col-auto">
-                            <button type="button" class="tags fraude2 btn btn-outline-danger" onclick="copyText(fraud2)">Fraude</button>
-                        </div>
-                    </div>
-                </div>
-                <!--//TAGS-->
-            </div>
-        </div>
-    </section>
-
-    <section id="total">
-        <div class="quadrado_inferior">
-            <p>TOTAL DE PEDIDOS FINALIZADOS</p>
-            <h1 id="txt_total" class="txt_total"></h1>
-        </div>
-    </section>
+<style>
+    .imghome{
+      height: 489px;
+    }
+    .title_homepage{
+        font-size: 110px;
+        text-align: left;
+    }
+    .subtitle_homepage{
+        font-weight: 400;
+        text-align: left;
+        font-size: 16px;
+        color: white;
+    }
+    .video-container {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn_homepage{
+      margin-bottom: 300px;
+      font-size: 20px;
+      font-weight: 600;
+      border-radius: 25px;
+      border-style: none;
+      color: var(--secondary);
+      background: rgb(227,78,120);
+      background: linear-gradient(157deg, rgba(227,78,120,1) 0%, rgba(117,55,114,1) 100%);
+  }
+  .btn_homepage:hover{
+    border-style: none;
+  }
+  .btn_left{
+    padding-top: 50px;
+    text-align: left;
+  }
+  
+  video {
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 10%;
+  }
+  .callout {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+  .index_bg{
+    background-color: #251B3D;
+  }
+  .container{
+    padding-top: 5%;
+  }
+  .img_git{
+    align-items: right;
+    height: 45px;
+  }
+</style>
+<body class="index_bg">
+        <div id="home">
+            <section class="video-container">
+              <video src="assets/background.mp4" autoplay loop playsinline muted></video>
+              <div class="callout">
+                <div class="container">
+                  <div class="row">
+                      <div class="col-sm-8">
+                        <h1 class="title_homepage">CLEAR PROD SYSTEM</h1>
+                        <p class="subtitle_homepage">Um sistema simples e eficaz que visa oferecer agilidade e pariticidade ao usuário. O Clear Prod System está em fase de desenvolvimento, atualmente nossa interface se resume a diversas seções que são utilizadas para marcar a produtividade nos respectivos horários, em breve mudanças grandes de interface a fim de reduzir essas sessões em uma estarão chegando.</p>
+                      </div>
+                      <div class="col-sm-4">
+                        <img class="imghome" src="assets/homeicon.png">
+                      </div>
+                      <div class="col-sm-3 btn_left">
+                        <button onclick="kiosk()" type="button" class="btn_homepage btn btn-primary">Começar agora</button>
+                      </div>
+                      <div class="col-sm-9 btn_left">
+                        <a target="blank" href="//github.com/BrazilianBug/Prod-Zen" ><img class="img_git" src="assets/github.png"></a>
+                      </div>
+                      
+            </section>
+          </div>
+    <script>
+        function kiosk() {
+          window.open("contador.html", "", "width=260, height=1100");
+          alert(window.parent.location);
+        }
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
     </script>
-    <script src="JS/bootstrap.min.js"></script>
-    <script src="JS/button.js"></script>
-    <script src="JS/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
