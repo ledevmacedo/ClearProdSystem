@@ -6,52 +6,88 @@
     text-align: center;
 }
 
+.navbar{
+    padding: 10px;
+    background-color: var(--primary);
+    width: 220px;
+    height: 60px;
+    border-radius: 0px 0px 16px 16px;
+    text-align: center;
+    align-items: center;
+}
+.navicon{
+    fill: blue;
+}
+header{
+    margin-bottom: 50px;
+}
 .green{
     background-color: #0C1C0C;
     border-radius: 10px;
+    position: static;
 }
 .red{
     background-color: #210C0C;
     border-radius: 10px;
 }
+
 .tags{
-    font-size: 11px;
-    font-weight: 600;
-    border-radius: 16px;
-    color: var(--secondary)
+    border-radius: 20px;
+    margin-top: 4.5px;
+    margin-bottom: 4.5px;
 }
-.tags.aprove{
-    border-color: #4136F1;
+.aprovado{
+    border-color: var(--blue);
+}
+.aprovado:hover{
+    background-color: var(--blue);
+    border-color: var(--blue);
 }
 .fraude{
-    border-color: #E61800;
-    margin: auto;
+    border-color: var(--red);
 }
-.fraude2{
-    border-color: #E67100;
-    margin: auto;
+.fraude:hover{
+    background-color: var(--red);
+    border-color: var(--red);
+}
+.cancelado{
+    border-color: var(--orange);
+}
+.cancelado:hover{
+    border-color:  var(--orange);
+    background-color: var(--orange);
+}
+.fila{
+    border-color: var(--green);
+}
+.fila:hover{
+    border-color: var(--green);
+    background-color: var(--green);
 }
 
+
 .quadrado{
+    padding: 10px;
     background-color: var(--primary);
-    width: 224px;
-    height: 144px;
+    width: 220px;
+    height: 160px;
+    border-radius: 16px;
+    text-align: center;
+    align-items: center;
+}
+.quadrado_tags{
+    padding: 10px;
+    background-color: var(--primary);
+    width: 220px;
+    height: 400px;
     border-radius: 16px;
     text-align: center;
     margin: auto;
-}
-
-.quadrado_inferior{
-    background-color: var(--primary);
-    width: 224px;
-    height: 80px;
-    border-radius: 20px;
-    text-align: center;
-    margin: auto;
+    align-items: center;
 }
 section{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 .col-auto{
     padding: 0px;
@@ -68,3 +104,44 @@ section{
     height: 200px;
     width: 200px;
 }
+.star_left{
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 0px;
+}
+.star_right{
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 40px;
+}
+
+.btn_circle{
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.circle_black{
+    background-color: var(--primary);
+}
+
+.circle_white{
+    background-color: var(--secondary);
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+.txt_tags{
+    padding-bottom: 10px;
+}
+
+.check-center{  
+    display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+ }
+

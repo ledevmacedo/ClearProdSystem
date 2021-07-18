@@ -1,0 +1,33 @@
+/*Tema Claro*/
+
+[data-theme="dark"] {
+    --primary:#FFFFFF;
+    --secondary: #0D0D0D;
+    --tertiary: #707070;
+    --background: 	#e1e1e1;
+}
+
+[data-theme="dracula"] {
+    --primary: #282a36;
+    --secondary: #f8f8f2;
+    --tertiary: #707070;
+    --background: #22212C;
+    --green: #50fa7b;
+    --blue: #8be9fd;
+    --red: #ff5555;
+    --orange: #ffb86c;
+}
+
+[data-theme="pink"] {
+    --primary:#FFFFFF;
+    --secondary: #0D0D0D;
+    --tertiary: #707070;
+    --background: 	#e1e1e1;
+    --green: ;
+    --blue: ;
+    --red: ;
+    --orange: ;
+}
+
+
+
