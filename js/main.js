@@ -1,4 +1,4 @@
-var counters = ["prod13h", "prod14h", "prod15h", "prod16h", "prod17h", "prod18h", "prod19h", "prod20h",
+var counters = ["prod08h","prod09h","prod10h","prod11h","prod12h","prod13h", "prod14h", "prod15h", "prod16h", "prod17h", "prod18h", "prod19h", "prod20h",
     "prod21h"
 ]
 onLoad();
@@ -13,6 +13,10 @@ function onLoad() {
     displayHour();
     calculate();
     setInterval(displayHour, 60000);
+    setInterval(removeAlerts, 15000);
+}
+function removeAlerts(){
+    document.getElementById("alert").style.display = "none";
 }
 function displayHour() {
     date = new Date();
@@ -58,4 +62,17 @@ function getHourTemplate() {
     hour = date.getHours()
     prodId = `prod${hour}h`
     return prodId
+}
+function getProductivity(){
+    prodHour = parseInt(document.getElementById("prodHours").value);
+    document.getElementById("input").value = window.localStorage.getItem(counters[prodHour - 1]);
+    calculate();
+}
+function setProductivity(){
+    prodHour = parseInt(document.getElementById("prodHours").value);
+    input = parseInt(document.getElementById("input").value);
+    prodId = counters[prodHour - 1];
+    window.localStorage.setItem(prodId, input)
+    calculate();
+    document.getElementById("alert").style.display = "block";
 }
