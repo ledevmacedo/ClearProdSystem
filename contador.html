@@ -18,8 +18,9 @@
 </head>
 
 <body>
-    <section class="theme_selector">
-        <div class="container check-center">
+    <header>
+        <section id="header">            
+            <div class="container check-center">
             <div class="form-check form-switch">
                 <input class="form-check-input" type="checkbox" id="darkSwitch" checked>
                 <label class="custom-control-label" for="darkSwitch">
@@ -28,7 +29,18 @@
             </div>
             </div>
         </div>
-    </section>
+
+    <div class="quadrado_header d-flex justify-content-center align-items-center">
+        <a class="nav-item nav-link"href="#header"><img  src="assets/Home.png"></a>
+        <a class="nav-item nav-link"href="#historico"><img  src="assets/Category.png"></a>
+        <a class="nav-item nav-link"href="#"><img  src="assets/Profile.png"></a>
+    </div>
+
+</section>
+
+    </header>
+
+
  
     <section id="13h">
         <div class="quadrado">
@@ -119,7 +131,38 @@
                     </button>
                 </div>
     </section>
+
+    <section id="historico" class="historico">
+        <div class="container quadrado_historico">
+            <div class="col-sm-12">
+                <h1 class="txt_tags">Histórico</h1>
+            </div>
+        <div class="justify-content-center align-items-center">
+            <select class="form-select">
+                    <option selected>Horário</option>
+                    <option value="1">08h00</option>
+                    <option value="2">09h00</option>
+                    <option value="3">10h00</option>
+                    <option value="4">11h00</option>
+                    <option value="5">12h00</option>
+                    <option value="6">13h00</option>
+                    <option value="7">14h00</option>
+                    <option value="8">15h00</option>
+                    <option value="9">16h00</option>
+                    <option value="10">17h00</option>
+                    <option value="11">18h00</option>
+                    <option value="12">19h00</option>
+                    <option value="13">20h00</option>
+                    <option value="14">21h00</option>
+              </select>
+              <input id="input" type="text">
+              <button id="salvar" class="btn salvar"><h3>Salvar</h3></button>
+        </div>
+        </div>
+    </section>
+
     <button type="button" class="tags fraude2 btn btn-outline-danger" onclick="reset()">Limpar valores</button>
+
     <footer>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
