@@ -1,3 +1,9 @@
+const ovp = "#OVP."
+const exp ="#VIPEXPRESSO."
 const approve = "Cliente reconhece a compra.\nAprovado.";
-const fraud = "Cliente não reconhece a compra.\nConfirma nome completo e data de nascimento.\n\nFraude confirmada";
-const fraud2 = "Cliente reconhece a compra.\nConfirma nome completo mas se recusa a confirmar data de nascimento.\n\nFraude confirmada.";
+const website = "Cliente reconhece a compra.\nInforma que efetuou a compra pelo site.\n\nAprovado."
+const app = "Cliente reconhece a compra.\nInforma que efetuou a compra pelo App.\n\nAprovado."
+const outros ="Cliente reconhece a compra.\nInforma que efetuou a compra ultilizado o canal de vendas ***\nconfirma data de nascimento e últimos 3 dígitos do cartão.\n\nAprovado."
+const fraude = "Cliente não reconhece a compra.\nInforma que não autorizou terceiros a efetuarem compras em seu nome.\nConfirma nome completo e data de nascimento.\n\nFraude confirmada";
+const fraude2 = "Cliente reconhece a compra.\nInforma que não autorizou terceiros a efetuarem compras em seu nome.\nConfirma nome completo mas se recusa a confirmar data de nascimento.\n\nFraude confirmada.";
+const cancel = "Cliente reconhece a compra mas solicita o cancelamento\nConfirma nome completo e data de nascimento\n\nCancelado."

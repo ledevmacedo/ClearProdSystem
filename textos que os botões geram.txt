@@ -1,0 +1,48 @@
+[OVP]
+#OVP.
+
+[VIPEXPRESSO]
+#VIPEXPRESSO.
+
+[Aprovado]
+Cliente reconhece a compra.
+Aprovado.
+
+[Website]
+Cliente reconhece a compra.
+Informa que efetuou a compra pelo site.
+
+Aprovado.
+
+[App]
+Cliente reconhece a compra.
+Informa que efetuou a compra pelo App.
+
+Aprovado.
+
+[Canal de vendas]
+Cliente reconhece a compra.
+Informa que efetuou a compra ultilizado o canal de vendas ***
+confirma data de nascimento e últimos 3 dígitos do cartão.
+
+Aprovado.
+
+[Fraude]
+Cliente reconhece a compra.
+Informa que não autorizou terceiros a efetuarem compras em seu nome.
+Confirma nome completo mas se recusa a confirmar data de nascimento.
+
+Fraude confirmada.
+
+[Não inf. Idade]
+Cliente reconhece a compra.
+Informa que não autorizou terceiros a efetuarem compras em seu nome.
+Confirma nome completo mas se recusa a confirmar data de nascimento.
+
+Fraude confirmada.
+
+[Cancelado]
+Cliente reconhece a compra mas solicita o cancelamento
+Confirma nome completo e data de nascimento
+
+Cancelado.

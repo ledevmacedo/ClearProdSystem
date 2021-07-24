@@ -32,7 +32,8 @@ header{
 }
 
 .tags{
-    border-radius: 20px;
+    border: 1,90px solid;
+    border-radius: 14px;
     margin-top: 4.5px;
     margin-bottom: 4.5px;
 }
