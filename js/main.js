@@ -1,6 +1,12 @@
 var contadores = ["prod13h", "prod14h", "prod15h", "prod16h", "prod17h", "prod18h", "prod19h", "prod20h",
 "prod21h"
 ]
+displayHour();
+function displayHour() {    
+    d = new Date();
+    document.getElementById("timeText").innerText = d.getHours()+"h00";
+}
+setInterval(displayHour, 60000);
 
 calculate()
 contadores.forEach((element) => {
