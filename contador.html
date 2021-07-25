@@ -10,7 +10,6 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
     <!--CSS -->
-    <link rel="stylesheet" href="css/dark-mode.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="assets/favicon.png" />
 
@@ -158,17 +157,11 @@
 
     <div class="col-sm-1 quadrado_theme">
         <h3 class="txt_theme">Temas</h3>
-        <button class="btn-c t01" onclick="setTheme('dark')"></button>
-        <button class="btn-c t02"  onclick="setTheme('white')"></button>
-        <button class="btn-c t03" onclick="setTheme('dracula')"></button>
-        <!--
-        <select name="" id="selectors" class="form-select" id="">
-            <option value="1" onchange="setTheme('dark')" >Dark</option>
-            <option value="2" onchange="setTheme('white')">White</option>
-            <option value="3" onchange="setTheme('dracula')">Dracula</option>
-            <option value="4">Pink</option>
-            <option value="4">Purple degradê</option>
-        </select>-->
+        <select name="" id="selectors" class="form-select" onchange="setTheme()">
+            <option value="dark">Dark</option>
+            <option value="white">White</option>
+            <option value="dracula">Dracula</option>
+        </select>
     </div>
     <footer>
     </footer>
@@ -178,7 +171,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/button.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/dark-mode-switch.min.js"></script>
     <script src="js/theme.js"></script>
 </body>
 </html>
