@@ -34,4 +34,8 @@ function resetTheme() {
   }
 }
 
+function setTheme(theme){
+  document.body.setAttribute("data-theme", theme);
+  //localStorage.setItem("darkSwitch", theme);
+}
 

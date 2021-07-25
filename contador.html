@@ -20,16 +20,6 @@
 <body>
     <header>
         <section id="header">            
-            <div class="container check-center">
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="darkSwitch" checked>
-                <label class="custom-control-label" for="darkSwitch">
-                    <h3>Tema claro</h3>
-                </label>
-            </div>
-            </div>
-        </div>
-
     <div class="quadrado_header d-flex justify-content-center align-items-center">
         <a class="nav-item nav-link"href="#header"><img  src="assets/Home.png"></a>
         <a class="nav-item nav-link"href="#historico"><img  src="assets/Category.png"></a>
@@ -158,13 +148,28 @@
               <input id="input" type="number" min="0" max="999">
               <button id="salvar" class="btn salvar" onclick="setProductivity()"><h3>Salvar</h3></button>
         </div>
+
         </div>
     </section>
     <div class="alert alert-success" role="alert" style="display: none"  id="alert">
         Alteração relizada
       </div>
-    <button type="button" class="tags fraude2 btn btn-outline-danger" onclick="reset()">Limpar valores</button>
+    <!--<button type="button" class="tags fraude2 btn btn-outline-danger" onclick="reset()">Limpar valores</button>-->
 
+    <div class="col-sm-1 quadrado_theme">
+        <h3 class="txt_theme">Temas</h3>
+        <button class="btn-c t01" onclick="setTheme('dark')"></button>
+        <button class="btn-c t02"  onclick="setTheme('white')"></button>
+        <button class="btn-c t03" onclick="setTheme('dracula')"></button>
+        <!--
+        <select name="" id="selectors" class="form-select" id="">
+            <option value="1" onchange="setTheme('dark')" >Dark</option>
+            <option value="2" onchange="setTheme('white')">White</option>
+            <option value="3" onchange="setTheme('dracula')">Dracula</option>
+            <option value="4">Pink</option>
+            <option value="4">Purple degradê</option>
+        </select>-->
+    </div>
     <footer>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -174,6 +179,6 @@
     <script src="js/button.js"></script>
     <script src="js/main.js"></script>
     <script src="js/dark-mode-switch.min.js"></script>
+    <script src="js/theme.js"></script>
 </body>
-
 </html>

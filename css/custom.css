@@ -103,6 +103,19 @@
     margin: auto;
     align-items: center;
 }
+.quadrado_theme{
+    padding: 10px 20px 0px 20px;
+    background-color: var(--primary);
+    width: 220px;
+    height: 80px;
+    border-radius: 16px;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+}
+.txt_theme{
+    padding-bottom: 10px;
+}
 section{
     padding-top: 3px;
     padding-bottom: 3px;
@@ -196,4 +209,28 @@ input{
     height: 50px;
     width: 115px;
     margin-left: 10px;
+}
+
+.btn-c{
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+    margin-right: 6px;
+    border-radius: 10px;
+    border-style: none;
+}
+.t01{
+    background-color: #000000;
+}
+.t02{
+    background-color: rgb(224, 224, 224);
+}
+.t03{
+    background-color: #766DA5;
+}
+.t04{
+    background-color: #000000;
+}
+.t05{
+    background-color: #000000;
 }
