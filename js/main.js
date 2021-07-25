@@ -37,9 +37,9 @@ function calculate() {
 }
 function reset() {
     counters.forEach((element) => {
-        window.localStorage.setItem(element, 0)
-        document.getElementById(element).innerHTML = window.localStorage.getItem(element)
+        window.localStorage.setItem(element, 0);
     })
+    document.getElementById("localProd").innerHTML = 0;
     calculate();
 }
 function add() {
