@@ -27,17 +27,6 @@
     --orange: #ffb86c;
 }
 
-[data-theme="pink"] {
-    --primary: #0D0D0D;
-    --secondary: #FFFFFF;
-    --tertiary: #707070;
-    --background: #202020;
-    --green: #70B200;
-    --blue: #0071B2;
-    --red: #E61800;
-    --orange: #E67100;
-}
-
 [data-theme="purple"] {
     --primary: #0D0D0D;
     --secondary: #FFFFFF;

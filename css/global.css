@@ -34,7 +34,14 @@ p{
 p.total_finalizados{
     padding-top: 10px;
 }
-
+p.alert{
+  padding-top: 10px;
+  margin:auto;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--green);
+}
 
 /* Works on Firefox */
 * {
