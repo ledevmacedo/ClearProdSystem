@@ -8,9 +8,20 @@
     --red: #E61800;
     --orange: #E67100 ;
 }
+* {
+    margin: auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
 body{
     background-color: var(--background);
 }
 header{
     padding-top: 20px;
 }
+
+/*
+font-family: 'Anton', sans-serif;*/

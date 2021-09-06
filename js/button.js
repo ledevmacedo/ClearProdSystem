@@ -6,4 +6,4 @@ const app = "Cliente confirmou ter realizado a compra pelo Aplicativo.\n\nAprova
 const outros ="Cliente confirmou ter realizado a compra por meio do canal de vendas intermediário ***.\nCliente informou corretamente os três últimos dígitos do cartão e e-mail.\n\nAprovado."
 const fraude = "Cliente não reconhece a compra.\nInforma não ter autorizado terceiros a efetuarem compras em seu nome.\nConfirma nome completo e data de nascimento.\n\nFraude confirmada.";
 const fraude2 = "Cliente não reconhece a compra.\nInforma não ter autorizado terceiros a efetuarem compras em seu nome.\nConfirma nome completo mas se recusa a confirmar data de nascimento.\n\nFraude confirmada.";
-const cancel = "Titular do pedido não deseja prosseguir com a compra.\nConfirma nome completo e data de nascimento\n\nCancelado."
+const cancel = "Titular do pedido não deseja prosseguir com a compra.\nConfirma nome completo e data de nascimento.\n\nCancelado."

@@ -10,96 +10,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
     <!--CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/homepage.css">
     <link rel="shortcut icon" href="assets/favicon.png" />
     <title>Clear Prod System</title>
 </head>
-<style>
-    .imghome{
-      height: 489px;
-    }
-    .title_homepage{
-        font-size: 100px;
-        text-align: left;
-    }
-    .subtitle_homepage{
-        font-weight: 400;
-        text-align: left;
-        font-size: 14px;
-        color: white;
-        padding-bottom: 50px;
-    }
-    .video-container {
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-  }
-  .btn_homepage{
-      margin-bottom: 300px;
-      font-size: 20px;
-      font-weight: 600;
-      border-radius: 25px;
-      border-style: none;
-      color: var(--secondary);
-      background: rgb(227,78,120);
-      background: linear-gradient(157deg, rgba(227,78,120,1) 0%, rgba(117,55,114,1) 100%);
-  }
-  .btn_homepage:hover{
-    border-style: none;
-  }
-  .btn_left{
-    padding-top: 50px;
-    text-align: left;
-  }
-  
-  video {
-    object-fit: cover;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 10%;
-  }
-  .callout {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    text-align: center;
-    position: relative;
-    z-index: 10;
-  }
-  .index_bg{
-    background-color: #251B3D;
-  }
-  .container{
-    padding-top: 5%;
-  }
-  .img_git{
-    align-items: right;
-    height: 45px;
-  }
-</style>
-<body class="index_bg">
-        <div id="home">
-            <section class="video-container">
-              <video src="assets/background.mp4" autoplay loop playsinline muted></video>
-              <div class="callout">
-                
-                <div class="container">
-                  <div class="row">
-                      <div class="col-md-7">
-                        <h1 class="title_homepage">CLEAR PROD SYSTEM</h1>
-                        <p class="subtitle_homepage">Um sistema simples e eficaz que visa oferecer agilidade e pariticidade ao usuário. O Clear Prod System está em fase de desenvolvimento, atualmente nossa interface se resume a diversas seções que são utilizadas para marcar a produtividade nos respectivos horários, em breve mudanças grandes de interface a fim de reduzir essas sessões em uma estarão chegando.</p>
-                        <button onclick="kiosk()" type="button" class="btn_homepage btn btn-primary">Começar agora</button>
-                        
-                      </div>
-                      <div class="col-md-5">
-                        <img class="imghome" src="assets/homeicon.png">
-                      </div>>
-            </section>
-          </div>
+<body>
+     <section id="home canvas" class="home">
+      <div class="container">
+        <div class="box box-1">
+          <h1 class="title_homepage">CLEAR PROD SYSTEM</h1>
+          <p class="subtitle_homepage">Um sistema simples e eficaz que visa oferecer agilidade e pariticidade ao usuário. O Clear Prod System está em fase de desenvolvimento, atualmente nossa interface se resume a diversas seções que são utilizadas para marcar a produtividade nos respectivos horários, em breve mudanças grandes de interface a fim de reduzir essas sessões em uma estarão chegando.</p> 
+          <button onclick="kiosk()" type="button" class="btn_homepage btn btn-primary">Começar agora</button height>
+        </div>
+        <div class="box box-2">
+          <img class="img_home" src="assets/homeicon.svg" alt="">
+        </div>
+        <div class="box box-3">
+
+        </div>
+    </div>
+     </section>
+
     <script>
         function kiosk() {
           window.open("contador.html", "", "width=260, height=1100");

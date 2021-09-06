@@ -76,3 +76,16 @@ function setProductivity(){
     calculate();
     document.getElementById("alert").style.display = "block";
 }
+
+
+var escale_less = document.getElementById("btn_pageless");
+
+escale_less.addEventListener('click',function() {
+    document.body.style.zoom = "60%" 
+})
+
+var escale_more = document.getElementById("btn_pagemore");
+
+escale_more.addEventListener('click',function() {
+    document.body.style.zoom = "100%" 
+})

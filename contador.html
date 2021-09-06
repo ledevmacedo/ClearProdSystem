@@ -2,6 +2,15 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0476EDR8H"></script>
+    <script>
+             window.dataLayer = window.dataLayer || [];
+             function gtag(){dataLayer.push(arguments);}
+             gtag('js', new Date());
+     
+             gtag('config', 'G-J0476EDR8H');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <!--CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="assets/favicon.png" />
@@ -20,9 +30,9 @@
     <header>
         <section id="header">            
     <div class="quadrado_header d-flex justify-content-center align-items-center">
-        <a class="nav-item nav-link"href="#header"><img  src="assets/Home.png"></a>
-        <a class="nav-item nav-link"href="#historico"><img  src="assets/Category.png"></a>
-        <a class="nav-item nav-link"href="#"><img  src="assets/Profile.png"></a>
+        <a id="btn_pageback" class="nav-item nav-link"href="#"><img  src="assets/img_home_btn.svg" height="25px"></a>
+        <a id="btn_pagemore" class="nav-item nav-link"href="#"><img id="more" src="assets/img_more_btn.svg" height="25px"></a>
+        <a id="btn_pageless" class="nav-item nav-link"href="#"><img  src="assets/img_less_btn.svg" height="25px"></a>
     </div>
 
 </section>
@@ -153,8 +163,8 @@
           </div>
         </div>
     </section>
-
-    <div class="col-sm-1 quadrado_theme">
+<section>
+    <div class="section_temas col-sm-1 quadrado_theme">
         <h3 class="txt_theme">Temas</h3>
         <select name="" id="selectors" class="form-select" onchange="setTheme()">
             <option value="dark">Dark</option>
@@ -162,6 +172,8 @@
             <option value="dracula">Dracula</option>
         </select>
     </div>
+</section>
+
     <button type="button" class="tags fraude2 btn btn-outline-danger" onclick="reset()">Limpar valores</button>
     <footer>
     </footer>
