@@ -1,54 +1,26 @@
-body{
-    background: url(/assets/clear-bg.jpg);
+:root{
+    --primary:#0D0D0D;
+    --secondary: #FFFFFF;
+    --tertiary: #707070;
+    --background: #202020;
+    --green: #70B200;
+    --blue: #0071B2;
+    --red: #E61800;
+    --orange: #E67100 ;
+}
+
+html { 
+    background: url(/assets/clear-bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    font-family: 'Poppins', sans-serif;
-}
-*{
-    box-sizing: border-box;
-    margin: 0;
+  }
+body{
     font-family: 'Poppins', sans-serif;
 }
 
-.box{
-
-    padding: 10px;
-}
-
-.container{
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: 1.6fr 1.3fr 0.7fr; 
-    grid-template-rows: 2.1fr 0.4fr 0.6fr;
-    grid-template-areas: 
-    'box-1 box-2 box-2'
-    'box-1 box-2 box-2'
-    ;
-}
-
-.box-1{
-    grid-area: box-1;
-    text-align: left;
-}
-.box-2{
-    grid-area: box-2;
-}
-
-.title_homepage{
-    font-size: 50px;
-    text-align: left;
-    color: #ff4800 ;
-}
-.subtitle_homepage{
-    padding-top: 10px;
-    font-weight: 400;
-    text-align: left;
-    font-size: 15px;
-    color: white;
-    padding-bottom: 50px;
-}
-
-.btn_homepage{
+.button{
     font-size: 20px;
     font-weight: 600;
     border-radius: 5px;
@@ -58,11 +30,7 @@ body{
 
     transition: .2s ease-in-out 0s;
 }
-
-
-
-
-.btn_homepage:hover{
+.button:hover{
     cursor: pointer;
     transform: scale(1.05);
     background-color: white;
@@ -70,8 +38,55 @@ body{
     
 }
 
+.title{
+    color: #ff4800;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+.subtitle{
+    font-family: 'Poppins', sans-serif;
+    color: var(--secondary);
+}
 
-.img_home{
-    padding-top: 80px;
-    height: 500px;
+.image {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 180s linear infinite;
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+.image:hover {
+    transition: 0.1s;
+    transition-delay: 0.1s;
+    filter: grayscale(100%);
+    -webkit-animation:spin-reverse 4s linear infinite;
+    -moz-animation:spin-reverse 4s linear infinite;
+    animation:spin-reverse 180s linear infinite;
+}
+
+@-moz-keyframes spin-reverse { 
+    50% { -moz-transform: rotate(-360deg); } 
+}
+@-webkit-keyframes spin-reverse { 
+    50% { -webkit-transform: rotate(-360deg); } 
+}
+@keyframes spin-reverse { 
+    50% { 
+        -webkit-transform: rotate(-360deg); 
+        transform:rotate(-360deg); 
+    } 
 }
