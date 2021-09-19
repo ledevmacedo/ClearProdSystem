@@ -227,3 +227,18 @@ input{
 .t05{
     background-color: #000000;
 }
+
+.btn{
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+
+    transition: .2s ease-in-out 0s;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    color: var(--primary);
+    
+}
