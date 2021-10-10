@@ -54,8 +54,38 @@ body{
     padding-bottom: 40px;
 }
 .subtitle{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: var(--secondary);
+}
+
+.text-orange{
+    font-family: 'Quicksand', sans-serif;
+    color: #ff4800;
+}
+
+.text-orange::after{
+    font-family: 'Quicksand', sans-serif;
+    color: #ff4800;
+	animation: text-animation infinite 4s;
+	transition: all 1s ease;
+    content: "the world";
+}
+@keyframes text-animation {
+    0% {
+		content: "agility";
+	}
+	25% {
+		content: "efficiency";
+	}
+	50% {
+		content: "control";
+	}
+	75% {
+		content: "safety";
+	}
+	100% {
+		content: "interactivity";
+	}
 }
 
 .img-animate {

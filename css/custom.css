@@ -20,43 +20,6 @@
     background-color: #210C0C;
     border-radius: 10px;
 }
-
-.tags{
-    border: 1,90px solid;
-    border-radius: 10px;
-    margin-top: 4.5px;
-    margin-bottom: 4.5px;
-}
-
-.aprovado{
-    border-color: var(--blue);
-}
-.aprovado:hover{
-    background-color: var(--blue);
-    border-color: var(--blue);
-}
-.fraude{
-    border-color: var(--red);
-}
-.fraude:hover{
-    background-color: var(--red);
-    border-color: var(--red);
-}
-.cancelado{
-    border-color: var(--orange);
-}
-.cancelado:hover{
-    border-color:  var(--orange);
-    background-color: var(--orange);
-}
-.fila{
-    border-color: var(--green);
-}
-.fila:hover{
-    border-color: var(--green);
-    background-color: var(--green);
-}
-
 .quadrado_header{
     padding: 10px;
     background-color: var(--primary);
@@ -197,7 +160,7 @@ input{
     border-radius: 10px;
 }
 .salvar{
-    background-color: var(--green);
+    background-color: var(--marine);
     border-radius: 10px;
     height: 50px;
     width: 115px;
@@ -228,17 +191,66 @@ input{
     background-color: #000000;
 }
 
-.btn{
-    font-size: 20px;
+
+
+.button{
+    margin-bottom: 10px;
+    font-size: 17px;
     font-weight: 600;
     border-radius: 5px;
-
+    border-style: none;
     transition: .2s ease-in-out 0s;
+    padding: 4px 10px 4px 10px;
+    
 }
-
-.btn:hover{
+.button:hover{
     cursor: pointer;
     transform: scale(1.05);
     color: var(--primary);
-    
 }
+
+.btn-ovp{background-color: var(--orange);}
+.btn-ovp:after       { content:'#OVP'; }
+.btn-ovp:hover:after { content:'Copiar'; }
+
+.btn-exp{background-color: var(--orange);}
+.btn-exp:after       { content:'#EXP'; }
+.btn-exp:hover:after { content:'Copiar'; }
+
+.btn-approve{background-color: var(--blue);}
+.btn-approve:after       { content:'Aprovado'; }
+.btn-approve:hover:after { content:'Copiar'; }
+
+.btn-website{background-color: var(--blue);}
+.btn-website:after       { content:'Website'; }
+.btn-website:hover:after { content:'Copiar'; }
+
+.btn-app{background-color: var(--blue);}
+.btn-app:after       { content:'Canal de vendas'; }
+.btn-app:hover:after { content:'Copiar'; }
+
+.btn-outros{background-color: var(--blue);}
+.btn-outros:after       { content:'Aplicativo'; }
+.btn-outros:hover:after { content:'Copiar'; }
+
+.btn-fraude{background-color: var(--red);}
+.btn-fraude:after       { content:'fraude'; }
+.btn-fraude:hover:after { content:'Copiar'; }
+
+.btn-fraude2{background-color: var(--red);}
+.btn-fraude2:after       { content:'Não inf. idade'; }
+.btn-fraude2:hover:after { content:'Copiar'; }
+
+.btn-cancel{background-color: var(--orange);}
+.btn-cancel:after       { content:'cancelado'; }
+.btn-cancel:hover:after { content:'Copiar'; }
+
+.btn-clean{
+    background-color: var(--orange);
+    margin-top: 10px;
+    padding: 10px 50px 10px 50px;
+
+}
+
+
+

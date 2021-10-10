@@ -30,9 +30,9 @@
     <header>
         <section id="header">            
     <div class="quadrado_header d-flex justify-content-center align-items-center">
-        <a id="btn_pageback" class="nav-item nav-link"href="#"><img  src="assets/img_home_btn.svg" height="25px"></a>
-        <a id="btn_pagemore" class="nav-item nav-link"href="#"><img id="more" src="assets/img_more_btn.svg" height="25px"></a>
-        <a id="btn_pageless" class="nav-item nav-link"href="#"><img  src="assets/img_less_btn.svg" height="25px"></a>
+        <a id="btn_pageback" class="nav-item nav-link"href="#"><img  src="assets/img_home_btn.png" height="25px"></a>
+        <a id="btn_pagemore" class="nav-item nav-link"href="#"><img id="more" src="assets/img_more_btn.png" height="25px"></a>
+        <a id="btn_pageless" class="nav-item nav-link"href="#"><img  src="assets/img_less_btn.png" height="25px"></a>
     </div>
 
 </section>
@@ -95,38 +95,37 @@
             <div class="container">
                 <div class="row">
                     <div class="col-auto d-flex flex-row-reverse justify-content-center">
-                        <button type="button" style="width:100%" class="btn tags fila" onclick="copyText(ovp)">
-                            <h3>#OVP</h3>
+                        <button type="button" style="width:100%" class="button btn-ovp" onclick="copyText(ovp)">
+                            
                         </button>
                     </div>
                     <div class="col-auto d-flex flex-row-reverse justify-content-center">
-                        <button type="button" style="width:100%" class="btn tags fila" onclick="copyText(exp)">
-                            <h3>#EXP</h3>
+                        <button type="button" style="width:100%" class="button btn-exp" onclick="copyText(exp)">
+                            
                         </button>
                     </div>
                 </div>
                 <div class="col-auto flex-row-reverse justify-content-center">
-                    <button type="button" style="width:100%" class="btn tags aprovado" onclick="copyText(approve)">
-                        <h3>Aprovado</h3>
+                    <button class="button btn-approve" type="button" style="width:100%" class="" onclick="copyText(approve)">
+                        
                     </button>
-                    <button type="button" style="width:100%" class="btn tags aprovado" onclick="copyText(website)">
-                        <h3>Website</h3>
+                    <button class="button btn-website" type="button" style="width:100%" class="" onclick="copyText(website)">
+                        
                     </button>
-                    <button type="button" style="width:100%" class="btn tags aprovado" onclick="copyText(app)">
-                        <h3>App</h3>
+                    <button class="button btn-app" type="button" style="width:100%" class="" onclick="copyText(app)">
+                        
                     </button>
-                    <button type="button" style="width:100%" class="btn tags aprovado" onclick="copyText(outros)">
-                        <h3>Canal de vendas</h3>
+                    <button class="button btn-outros" type="button" style="width:100%" class="" onclick="copyText(outros)">
+                        
                     </button>
-                    <button type="button" style="width:100%" class="btn tags fraude" onclick="copyText(fraude)">
-                        <h3>Fraude</h3>
+                    <button class="button btn-fraude" type="button" style="width:100%" class="" onclick="copyText(fraude)">
+                        
                     </button>
-                    <button type="button" style="width:100%" class="btn tags fraude" onclick="copyText(fraude2)">
-                        <h3>Não inf.
-                            idade</h3>
+                    <button class="button btn-fraude2" type="button" style="width:100%" class="" onclick="copyText(fraude2)">
+ 
                     </button>
-                    <button type="button" style="width:100%" class="btn tags cancelado" onclick="copyText(cancel)">
-                        <h3>Cancelado</h3>
+                    <button class="button btn-cancel" type="button" style="width:100%" class="" onclick="copyText(cancel)">
+                        
                     </button>
                 </div>
     </section>
@@ -155,7 +154,7 @@
                     <option value="14">21h00</option>
               </select>
               <input id="input" type="number" min="0" max="999">
-              <button id="salvar" class="btn salvar" onclick="setProductivity()"><h3>Salvar</h3></button>
+              <button id="salvar" class="button salvar" onclick="setProductivity()"><h3>Salvar</h3></button>
               <p class="alert" style="display: none"  id="alert">Alteração realizada</p>
         </div>
         <div class="alert alert-success" role="alert" style="display: none"  id="alert">
@@ -174,7 +173,7 @@
     </div>
 </section>
 
-    <button type="button" class="tags fraude2 btn btn-outline-danger" onclick="reset()">Limpar valores</button>
+    <button type="button" class="button btn-clean" onclick="reset()">Limpar valores</button>
     <footer>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

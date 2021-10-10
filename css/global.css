@@ -24,6 +24,16 @@ h3{
     font-size: 16px;
     font-weight: 600;
 }
+button{
+  color: var(--secondary);
+  text-align: center;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 600;
+}
+button:hover::after{
+  color: var(--secondary);
+}
 p{
     margin:auto;
     margin-bottom: 0;
