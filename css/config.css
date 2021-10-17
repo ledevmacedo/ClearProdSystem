@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
 :root{
     --primary:#111;
     --secondary: #FFFFFF;
@@ -16,13 +18,3 @@
     align-items: center;
     text-align: center;
 }
-
-body{
-    background-color: var(--background);
-}
-header{
-    padding-top: 20px;
-}
-
-/*
-font-family: 'Anton', sans-serif;*/

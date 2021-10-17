@@ -1,138 +1,6 @@
-.navbar{
-    padding: 10px;
-    background-color: var(--primary);
-    width: 220px;
-    height: 60px;
-    border-radius: 0px 0px 10px 10px;
-    text-align: center;
-    align-items: center;
+.accordion-body{
+    border-radius: 50px;
 }
-.navicon{
-    fill: blue;
-}
-
-.green{
-    background-color: #0C1C0C;
-    border-radius: 10px;
-    position: static;
-}
-.red{
-    background-color: #210C0C;
-    border-radius: 10px;
-}
-.quadrado_header{
-    padding: 10px;
-    background-color: var(--primary);
-    width: 220px;
-    height: 60px;
-    border-radius: 10px;
-    text-align: center;
-    align-items: center;
-}
-.quadrado{
-    padding: 10px;
-    background-color: var(--primary);
-    width: 220px;
-    height: 160px;
-    border-radius: 10px;
-    text-align: center;
-    align-items: center;
-
-}
-.quadrado_tags{
-    padding: 10px;
-    background-color: var(--primary);
-    width: 220px;
-    height: 400px;
-    border-radius: 10px;
-    text-align: center;
-    margin: auto;
-    align-items: center;
-}
-.quadrado_historico{
-    padding: 10px 20px 0px 20px;
-    background-color: var(--primary);
-    width: 220px;
-    height: 190px;
-    border-radius: 10px;
-    text-align: center;
-    margin: auto;
-    align-items: center;
-}
-.quadrado_theme{
-    padding: 10px 20px 0px 20px;
-    background-color: var(--primary);
-    width: 220px;
-    height: 100px;
-    border-radius: 10px;
-    text-align: center;
-    margin: auto;
-    align-items: center;
-}
-.txt_theme{
-    padding-bottom: 10px;
-}
-section{
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-.col-auto{
-    padding: 0px;
-    margin: auto;
-}
-
-.txt_total{
-    margin:auto;
-    margin-bottom: 0;
-    padding:0;
-    font-size: 32px;
-}
-.logo{
-    height: 200px;
-    width: 200px;
-}
-.star_left{
-    margin: auto;
-    padding-left: 40px;
-    padding-right: 0px;
-}
-.star_right{
-    margin: auto;
-    padding-left: 0px;
-    padding-right: 40px;
-}
-
-.btn_circle{
-    height: 20px;
-    width: 20px;
-    padding: 5px;
-    border-radius: 50%;
-}
-
-.circle_black{
-    background-color: var(--primary);
-}
-
-.circle_white{
-    background-color: var(--secondary);
-}
-.btn:focus {
-    outline: none;
-    box-shadow: none;
-  }
-.txt_tags{
-    padding-bottom: 10px;
-}
-
-.check-center{  
-    display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-items: center;
- }
-
-
 
 .form-select{
     border-radius: 10px;
@@ -145,9 +13,6 @@ section{
 option{
     box-shadow: none;
     outline: none;
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--secondary);
     background-color: var(--primary);
 }
 
@@ -158,57 +23,35 @@ input{
     height: 50px;
     width: 50px;
     border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px ;
 }
-.salvar{
-    background-color: var(--marine);
-    border-radius: 10px;
-    height: 50px;
-    width: 115px;
-    margin-left: 10px;
+.accordion-item{
+    background-color: var(--primary);
+    border: none;
 }
-
-.btn-c{
-    width: 20px;
-    height: 20px;
-    margin-left: 6px;
-    margin-right: 6px;
-    border-radius: 10px;
-    border-style: none;
+.accordion-button {
+    background-color: var(--primary)
 }
-.t01{
-    background-color: #000000;
-}
-.t02{
-    background-color: rgb(224, 224, 224);
-}
-.t03{
-    background-color: #766DA5;
-}
-.t04{
-    background-color: #000000;
-}
-.t05{
-    background-color: #000000;
-}
-
-
-
-.button{
-    margin-bottom: 10px;
-    font-size: 17px;
-    font-weight: 600;
-    border-radius: 5px;
-    border-style: none;
-    transition: .2s ease-in-out 0s;
-    padding: 4px 10px 4px 10px;
+.accordion-button:not(.collapsed) {
+    color: var(--secondary);
+    background-color: var(--background);
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
     
 }
-.button:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-    color: var(--primary);
+
+.accordion-body {
+    background-color: var(--primary);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0px;
 }
 
+.bi{
+    color: var(--blue);
+}
 .btn-ovp{background-color: var(--orange);}
 .btn-ovp:after       { content:'#OVP'; }
 .btn-ovp:hover:after { content:'Copiar'; }
@@ -226,7 +69,7 @@ input{
 .btn-website:hover:after { content:'Copiar'; }
 
 .btn-app{background-color: var(--blue);}
-.btn-app:after       { content:'Canal de vendas'; }
+.btn-app:after       { content:'WhatsApp'; }
 .btn-app:hover:after { content:'Copiar'; }
 
 .btn-outros{background-color: var(--blue);}
@@ -248,9 +91,7 @@ input{
 .btn-clean{
     background-color: var(--orange);
     margin-top: 10px;
-    padding: 10px 50px 10px 50px;
-
 }
 
-
-
+.salvar{background-color: var(--marine);}
+.salvar:after       { content:'Salvar'; }

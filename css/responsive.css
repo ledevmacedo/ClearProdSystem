@@ -1,0 +1,154 @@
+@media(max-width:220px) {
+    .flex-box{
+        flex-direction: column;
+    }
+    .flex-box2 {
+        flex-direction: column;
+    }
+
+    .btn-ovp{background-color: var(--orange);}
+    .btn-ovp:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f251';
+        font-size: 28px;
+        margin: 0 auto;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+    .btn-ovp:hover:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f0c5';
+        font-size: 28px;
+        margin: 0 auto; 
+    }
+    .btn-exp{background-color: var(--orange);}
+    .btn-exp:after {
+        font-family: 'Font Awesome 5 Free';
+        content: '\f254';
+        font-size: 28px;
+        margin: 0 auto;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
+  
+    .btn-exp:hover:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f0c5';
+        font-size: 28px;
+        margin: 0 auto; 
+    }
+    
+    .btn-approve{background-color: var(--blue);}
+    .btn-approve:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f164';
+        font-size: 28px;
+ 
+        margin: 0 auto;
+    }
+    .btn-approve:hover:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f0c5';
+        font-size: 28px;
+
+        margin: 0 auto; 
+    }
+    
+    .btn-website{background-color: var(--blue);}
+    .btn-website:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f2d0';
+        font-size: 28px;
+  
+        margin: 0 auto;
+    }
+    .btn-website:hover:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f0c5';
+        font-size: 28px;
+ 
+        margin: 0 auto; 
+    }
+    
+    .btn-app{background-color: var(--blue);}
+    .btn-app:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f3cd';
+        font-size: 28px;
+ 
+        margin: 0 auto;
+    }
+    .btn-app:hover:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f0c5';
+        font-size: 28px;
+
+        margin: 0 auto; 
+    }
+    
+    .btn-outros{background-color: var(--blue);}
+    .btn-outros:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f290';
+        font-size: 28px;
+
+        margin: 0 auto;
+    }
+    .btn-outros:hover:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f0c5';
+        font-size: 28px;
+
+        margin: 0 auto; 
+    }
+    
+    .btn-fraude{background-color: var(--red);}
+    .btn-fraude:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f06a';
+        font-size: 28px;
+
+        margin: 0 auto;
+    }
+    .btn-fraude:hover:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f0c5';
+        font-size: 28px;
+
+        margin: 0 auto; 
+    }
+    
+    .btn-fraude2{background-color: var(--red);}
+    .btn-fraude2:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f071';
+        font-size: 28px;
+
+        margin: 0 auto;
+    }
+    .btn-fraude2:hover:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f0c5';
+        font-size: 28px;
+        margin: 0 auto; 
+    }
+    .btn-cancel{background-color: var(--orange);}
+    .btn-cancel:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f057';
+        font-size: 28px;
+
+        margin: 0 auto;
+    }
+    .btn-cancel:hover:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f0c5';
+        font-size: 28px;
+        margin: 0 auto; 
+    }
+
+    .accordion-button{
+        font-size: 0.7rem;
+    }
+
+}
