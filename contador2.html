@@ -53,30 +53,54 @@
               </button>
             </div>
           </div>
-
-          <div class="flex-box2">
-            <div>
-              <button type="button" class="btn btn-success">Aprovado</button>
-            </div>
-
-            <div>
-              <!--TOTAL DE APROVADOS-->
-              <h2 id="localapproved">10</h2>
-            </div>
-			
-            <div>
-              <!--Porcentagem de aprovados-->
-              <h3 id="localPercentage">20%</h3>
-            </div>	
-          </div>
-          <br>
+          <div class="bt-10"></div>
+          <div class="bt-10"></div>
           <p>TOTAL DE PEDIDOS FINALIZADOS</p>
           <h2 id="txt_total"></h2>
         </div>
       </div>
     </div>
+
   </div>
   <!--//CONTADOR-->
+
+   <!--TAGS-->
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#panelsStayOpen-collapseHeader" aria-expanded="true"
+        aria-controls="panelsStayOpen-collapseHeader">
+        APROVAÇÃO
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseHeader" class="accordion-collapse collapse show"
+      aria-labelledby="panelsStayOpen-headingHeader">
+      <div class="accordion-body">
+        <!--Aqui vai ficar o conteudo HTML-->
+        <div class="flex-box2">
+          <div>
+            <button onclick="add()" class="btn_13h_add green btn">
+              <img src="assets/arrow-green.svg" alt="">
+            </button>
+            <button onclick="remove()" class="btn_13h_remove red btn btn-outline">
+              <img src="assets/arrow-red.svg" alt="">
+            </button>
+          </div>
+
+          <div>
+            <!--TOTAL DE APROVADOS-->
+            <h2 id="localapproved">10</h2>
+          </div>
+    
+          <div>
+            <!--Porcentagem de aprovados-->
+            <h3 id="localPercentage">20%</h3>
+          </div>	
+        </div>
+      </div>
+
+    </div>
+    <!--//TAGS-->
 
   <!--TAGS-->
   <div class="accordion-item">
@@ -128,6 +152,7 @@
 
         </div>
       </div>
+
     </div>
     <!--//TAGS-->
     <!--CONFIGURAÇÕES-->

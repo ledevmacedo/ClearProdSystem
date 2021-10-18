@@ -53,12 +53,17 @@
               </button>
             </div>
           </div>
+          <div class="bt-10"></div>
           <p>TOTAL DE PEDIDOS FINALIZADOS</p>
           <h2 id="txt_total"></h2>
         </div>
+
       </div>
+      
     </div>
+    
   </div>
+  
   <!--//CONTADOR-->
 
   <!--TAGS-->
@@ -135,20 +140,30 @@
           <div class="justify-content-center align-items-center">
             <select id="prodHours" class="form-select" onchange="getProductivity()">
               <option selected>Horário</option>
-              <option value="1">08h00</option>
-              <option value="2">09h00</option>
-              <option value="3">10h00</option>
-              <option value="4">11h00</option>
-              <option value="5">12h00</option>
-              <option value="6">13h00</option>
-              <option value="7">14h00</option>
-              <option value="8">15h00</option>
-              <option value="9">16h00</option>
-              <option value="10">17h00</option>
-              <option value="11">18h00</option>
-              <option value="12">19h00</option>
-              <option value="13">20h00</option>
-              <option value="14">21h00</option>
+              <option value="1">01h00</option>
+              <option value="2">02h00</option>
+              <option value="3">03h00</option>
+              <option value="4">04h00</option>
+              <option value="5">05h00</option>
+              <option value="6">06h00</option>
+              <option value="7">07h00</option>
+              <option value="8">08h00</option>
+              <option value="9">09h00</option>
+              <option value="10">10h00</option>
+              <option value="11">11h00</option>
+              <option value="12">12h00</option>
+              <option value="13">13h00</option>
+              <option value="14">14h00</option>
+              <option value="15">15h00</option>
+              <option value="16">16h00</option>
+              <option value="17">17h00</option>
+              <option value="18">18h00</option>
+              <option value="19">19h00</option>
+              <option value="20">20h00</option>
+              <option value="21">21h00</option>
+              <option value="22">22h00</option>
+              <option value="23">23h00</option>
+              <option value="24">00h00</option>
             </select>
             <input id="input" type="number" min="0" max="999">
             <button id="salvar" class="button salvar" onclick="setProductivity()">
@@ -161,6 +176,7 @@
           </div>
           <div class="section_temas col-sm-1 quadrado_theme">
             <h3>Temas</h3>
+            
             <select name="" id="selectors" class="form-select" onchange="setTheme()">
               <option value="dark">Dark</option>
               <option value="white">White</option>
@@ -170,6 +186,8 @@
             <button type="button" class="button btn-clean" onclick="reset()">
               Limpar
             </button>
+            <br>
+            <br>
           </div>
         </div>
       </div>

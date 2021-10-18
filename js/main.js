@@ -1,5 +1,4 @@
-var counters = ["prod08h","prod09h","prod10h","prod11h","prod12h","prod13h", "prod14h", "prod15h", "prod16h", "prod17h", "prod18h", "prod19h", "prod20h",
-    "prod21h"
+var counters = ["prod0h","prod1h","prod2h","prod3h","prod4h","prod5h","prod6h","prod7h","prod8h","prod9h","prod10h","prod11h","prod12h","prod13h", "prod14h", "prod15h", "prod16h", "prod17h", "prod18h", "prod19h", "prod20h","prod21h","prod22h","prod23h"
 ]
 onLoad();
 function onLoad() {
@@ -76,16 +75,3 @@ function setProductivity(){
     calculate();
     document.getElementById("alert").style.display = "block";
 }
-
-
-var escale_less = document.getElementById("btn_pageless");
-
-escale_less.addEventListener('click',function() {
-    document.body.style.zoom = "60%" 
-})
-
-var escale_more = document.getElementById("btn_pagemore");
-
-escale_more.addEventListener('click',function() {
-    document.body.style.zoom = "100%" 
-})

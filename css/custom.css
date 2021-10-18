@@ -9,7 +9,14 @@
     color: var(--secondary);
     background-color: var(--primary);
     margin-bottom: 20px;
+    outline: none !important;
+    box-shadow: none;
 }
+.form-select:focus{
+    outline: none !important;
+    box-shadow: none;
+}
+
 option{
     box-shadow: none;
     outline: none;
@@ -52,6 +59,15 @@ input{
 .bi{
     color: var(--blue);
 }
+
+.green {
+    background-color: #0C1C0C;
+    border-radius: 10px;
+}
+.red {
+    background-color: #210C0C;
+    border-radius: 10px;
+}
 .btn-ovp{background-color: var(--orange);}
 .btn-ovp:after       { content:'#OVP'; }
 .btn-ovp:hover:after { content:'Copiar'; }
@@ -77,7 +93,7 @@ input{
 .btn-outros:hover:after { content:'Copiar'; }
 
 .btn-fraude{background-color: var(--red);}
-.btn-fraude:after       { content:'fraude'; }
+.btn-fraude:after       { content:'Fraude'; }
 .btn-fraude:hover:after { content:'Copiar'; }
 
 .btn-fraude2{background-color: var(--red);}
