@@ -22,6 +22,9 @@ body{
 .accordion{
   max-width: 270px;
 }
+.container{
+  padding: 3.9px;
+}
 /*
 font-family: 'Montserrat', sans-serif;
 font-family: 'Quicksand', sans-serif;

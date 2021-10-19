@@ -33,27 +33,28 @@ input{
     margin: 0 auto;
     margin-bottom: 10px ;
 }
+.accordion-header{
+    border-radius: 16px;
+    background-color: unset !important;
+}
 .accordion-item{
     background-color: var(--primary);
     border: none;
+    border-radius: 16px;
 }
 .accordion-button {
-    background-color: var(--primary)
+    background-color: unset !important;
 }
 .accordion-button:not(.collapsed) {
     color: var(--secondary);
-    background-color: var(--background);
+    background-color: unset !important;
     box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
     
 }
 
 .accordion-body {
     background-color: var(--primary);
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding: 0px;
+    border-radius: 16px;
 }
 
 .bi{
@@ -85,11 +86,11 @@ input{
 .btn-website:hover:after { content:'Copiar'; }
 
 .btn-app{background-color: var(--blue);}
-.btn-app:after       { content:'WhatsApp'; }
+.btn-app:after       { content:'Aplicativo'; }
 .btn-app:hover:after { content:'Copiar'; }
 
 .btn-outros{background-color: var(--blue);}
-.btn-outros:after       { content:'Aplicativo'; }
+.btn-outros:after       { content:'Canal de vendas'; }
 .btn-outros:hover:after { content:'Copiar'; }
 
 .btn-fraude{background-color: var(--red);}

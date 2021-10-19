@@ -64,27 +64,31 @@ body{
 }
 
 .text-orange::after{
+    content: 'the world';
     font-family: 'Quicksand', sans-serif;
     color: #ff4800;
-	animation: text-animation infinite 4s;
+	animation: text-animation infinite 5s;
 	transition: all 1s ease;
-    content: "the world";
+    
 }
 @keyframes text-animation {
     0% {
+		content: "the world";
+	}
+    20% {
 		content: "agility";
 	}
-	25% {
+	40% {
 		content: "efficiency";
 	}
-	50% {
+	60% {
 		content: "control";
 	}
-	75% {
-		content: "safety";
-	}
-	100% {
+	80% {
 		content: "interactivity";
+	}
+    100% {
+		content: "the world";
 	}
 }
 
