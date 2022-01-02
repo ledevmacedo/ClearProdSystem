@@ -147,6 +147,26 @@
         margin: 0 auto; 
     }
 
+    .btn-cttrecente{background-color: var(--orange);}
+    .btn-cttrecente:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f2a0';
+        font-size: 28px;
+
+        margin: 0 auto;
+    }
+    .btn-cttrecente:hover:after{
+        font-family: 'Font Awesome 5 Free';
+        content: '\f0c5';
+        font-size: 28px;
+        margin: 0 auto; 
+    }
+
+    /*
+    .btn-cttrecente{background-color: var(--orange);}
+    .btn-cttrecente:after       { content:'Contato Recente'; }
+    .btn-cttrecente:hover:after { content:'Copiar'; }
+    */
     .accordion-button{
         font-size: 0.7rem;
     }

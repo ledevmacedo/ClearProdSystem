@@ -64,7 +64,7 @@ p{
 .accordion-button{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    color: var(--secondary);
+    color: var(--seondary);
     font-size: 0.9rem;
     margin: 0 auto;
 }
@@ -72,7 +72,7 @@ button{
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
-    color: var(--secondary);
+    color: var(--primary);
     font-size: 0.9rem;
     margin: 0 auto;
   }

@@ -105,6 +105,10 @@ input{
 .btn-cancel:after       { content:'cancelado'; }
 .btn-cancel:hover:after { content:'Copiar'; }
 
+.btn-cttrecente{background-color: var(--orange);}
+.btn-cttrecente:after       { content:'Contato Recente'; }
+.btn-cttrecente:hover:after { content:'Copiar'; }
+
 .btn-clean{
     background-color: var(--orange);
     margin-top: 10px;
