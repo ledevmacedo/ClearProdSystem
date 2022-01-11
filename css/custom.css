@@ -1,7 +1,40 @@
-.accordion-body{
-    border-radius: 50px;
+/*
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+        aria-controls="panelsStayOpen-collapseThree">
+
+*/
+
+.accordion-button::after {
+    background-image: url();
+    font-family: 'Font Awesome 5 Free';
+    content: '\f107';
+    font-size: 18px;
+    margin: 0 auto; 
 }
 
+.accordion-button:not(.collapsed)::after{
+    background-image: url();
+    font-family: 'Font Awesome 5 Free';
+    content: '\f107';
+    font-size: 18px;
+    margin: 0 auto; 
+}
+
+.accordion-button {
+    background-image: url();
+    font-family: 'Font Awesome 5 Free';
+    content: '';
+    font-size: 18px;
+    margin: 0 auto; 
+}
+
+
+div.accordion-item{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
 .form-select{
     border-radius: 10px;
     font-size: 15px;
@@ -105,9 +138,15 @@ input{
 .btn-cancel:after       { content:'cancelado'; }
 .btn-cancel:hover:after { content:'Copiar'; }
 
-.btn-cttrecente{background-color: var(--orange);}
-.btn-cttrecente:after       { content:'Contato Recente'; }
-.btn-cttrecente:hover:after { content:'Copiar'; }
+.btn-cttrecente{
+    color: var(--primary-absolute);
+    background-color: var(--green);}
+.btn-cttrecente:after{ 
+    color: var(--primary-absolute);
+    content:'Contato Recente'; }
+.btn-cttrecente:hover:after { 
+    color: var(--primary-absolute);
+    content:'Copiar'; }
 
 .btn-clean{
     background-color: var(--orange);

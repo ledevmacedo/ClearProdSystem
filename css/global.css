@@ -72,7 +72,7 @@ button{
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
-    color: var(--primary);
+    color: var(--secondary);
     font-size: 0.9rem;
     margin: 0 auto;
   }
